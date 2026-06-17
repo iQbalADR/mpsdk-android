@@ -1,0 +1,38 @@
+Copyright (c) 2026 iQbalADR (iqbal.adr@gmail.com). All rights reserved.
+
+PROPRIETARY AND CONFIDENTIAL
+
+This software and its associated source code, documentation, designs, and all
+other materials in this repository (collectively, the "Software") are the
+proprietary and confidential property of the copyright holder named above (the
+"Owner").
+
+No license, express or implied, is granted by the publication or distribution
+of the Software. Unless you have a separate written agreement signed by the
+Owner, you MAY NOT, in whole or in part:
+
+  1. use, run, or evaluate the Software for any purpose;
+  2. copy, reproduce, or store the Software;
+  3. modify, adapt, translate, or create derivative works of the Software;
+  4. distribute, publish, sublicense, sell, rent, lease, or otherwise transfer
+     the Software or access to it; or
+  5. reverse engineer, decompile, or disassemble any compiled portion of the
+     Software, except to the extent that this restriction is prohibited by
+     applicable law.
+
+All rights not expressly granted in a signed written agreement are reserved by
+the Owner. Possession of, or access to, the Software does not convey any right
+or license to it.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE OWNER BE
+LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Third-party components included in this repository (for example, dependencies
+under node_modules/, Swift packages, and other vendored libraries) remain
+subject to their own respective licenses.
+
+To request a license, contact: iqbal.adr@gmail.com
