@@ -49,45 +49,6 @@ Public entry points: `MiniProgramSDK`, `MiniProgramBridge`,
 
 ---
 
-## Building the AAR
-
-Built from the source repo (`iQbalADR/mpsdk-source-android`). Two ways:
-
-**CI (recommended — no local toolchain):** drop [`build-aar.yml`](build-aar.yml)
-into `.github/workflows/` in the source repo and run it. It provisions
-Gradle + the Android SDK on a runner, builds, and uploads
-`miniprogramsdk-release.aar` as an artifact (and attaches it to `v*` tag
-releases).
-
-**Locally** (needs the Android SDK + Gradle 8.9; e.g. via Android Studio):
-
-```bash
-export ANDROID_HOME=$HOME/Library/Android/sdk     # or set sdk.dir in local.properties
-cd Android                                        # repo root of the Android project
-gradle :miniprogramsdk:assembleRelease            # or ./gradlew if a wrapper is committed
-# -> miniprogramsdk/build/outputs/aar/miniprogramsdk-release.aar
-```
-
-> The module already ships `consumer-rules.pro` via `consumerProguardFiles`,
-> so every consuming app inherits the keep-rules automatically — no extra
-> setup needed. The release build config:
-
-```kotlin
-// miniprogramsdk/build.gradle.kts
-android {
-    buildTypes {
-        release {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"),
-                          "proguard-rules.pro")
-        }
-    }
-    defaultConfig { consumerProguardFiles("consumer-rules.pro") }
-}
-```
-
----
-
 ## ProGuard / R8 configuration
 
 Two files ship with this SDK:
